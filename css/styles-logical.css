@@ -134,6 +134,7 @@ p {
 pre {
     background: var(--white10);
     padding: 40px;
+    padding-inline-start: 0px;
     overflow: auto; /* scroll automático solo para el elemento*/
     border-radius: 8px;
     /* border-inline: 10px solid red;
@@ -148,6 +149,7 @@ blockquote {
     background: var(--white10);
     margin-block-start: 80px;
     margin-block-end: 63px;
+    margin-inline-start: 0;
     border-radius: 8px;
     line-height: 32px;
     font-size: 24px;
@@ -288,6 +290,26 @@ blockquote p {
 }
 
 
+
+footer {
+    background: var(--white30);
+    block-size: 174px;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+}
+
+footer h2 {
+    color: var(--white10);
+    /* text-align: center; */
+    /* inset-block-start: 48px; */
+    margin-top: 48px;
+    /* position: absolute; */
+    /* margin: 0; */
+    /* inset-inline-start: 500px; */
+    font-size: 24px;
+}
+
 /* recomendado colocar los media queries en la parte inferior */
 
 @media screen and (min-width: 1360px) {
@@ -316,5 +338,8 @@ blockquote p {
     h1 {
         font-size: 60px;
         margin-block-start: 64px;
+    }
+    footer h2 {
+        font-size: 32px;
     }
 }
